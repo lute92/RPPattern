@@ -1,0 +1,19 @@
+{
+  "name": "rppattern",
+  "version": "1.0.0",
+  "description": "Revealing Prototype Pattern Demonstration",
+  "main": "app.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+ssh://git@github.com/lute92/RPPattern.git"
+  },
+  "author": "lute",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/lute92/RPPattern/issues"
+  },
+  "homepage": "https://github.com/lute92/RPPattern#readme"
+}
