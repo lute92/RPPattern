@@ -1,0 +1,29 @@
+<html>
+  <head>
+    <title>Student List</title>
+
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/3.3.7/js/bootstrap.min.js"></script>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/3.3.7/css/bootstrap.min.css"></link>
+
+    <style>
+        body {  background:skyblue;font-family: monospace;color:#fff;padding:30px;}
+        h1 {  font-size: 35px;font-family: monospace;text-transform: uppercase;letter-spacing: 2px;text-align: center;}
+
+    </style>
+  </head>
+  <body>
+    <h1>Student Form</h1>
+
+    <div id="student-list">
+
+    </div>
+
+    <script type="text/javascript">
+
+      let app = new StudentApp();
+      app.loadStudents();
+
+    </script>
+  </body>
+</html>
