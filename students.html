@@ -6,23 +6,49 @@
     <script src="https://cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/3.3.7/js/bootstrap.min.js"></script>
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/3.3.7/css/bootstrap.min.css"></link>
 
+
+    <script src="src/studentApp.js"></script>
+    <script src="src/api.js"></script>
+
+
     <style>
         body {  background:skyblue;font-family: monospace;color:#fff;padding:30px;}
         h1 {  font-size: 35px;font-family: monospace;text-transform: uppercase;letter-spacing: 2px;text-align: center;}
-
+        p { font-size:20px;}
     </style>
   </head>
   <body>
     <h1>Student Form</h1>
 
+    <div id="student-list-column-headers">
+      <div class="row">
+        <div class="col-md-2">
+          <p>Student ID<span></span></p>
+        </div>
+        <div class="col-md-2">
+          <p>Student Name<span></span></p>
+        </div>
+        <div class="col-md-2">
+          <p>Age<span></span></p>
+        </div>
+        <div class="col-md-2">
+          <p>Address <span></span></p>
+        </div>
+      </div>
+    </div>
+
     <div id="student-list">
+      <!--Student data will show here-->
 
     </div>
 
     <script type="text/javascript">
 
-      let app = new StudentApp();
-      app.loadStudents();
+      $(document).ready(function(){
+        let app = new StudentApp();
+        app.loadStudents();
+
+      })
 
     </script>
   </body>
